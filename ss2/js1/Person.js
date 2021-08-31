@@ -5,16 +5,16 @@ export default class Person extends Base{
         this.state = 
         {
             links : [
-                {name: "Nguyễn Hải Dũng", vacsin: 1, age: 21},
-                {name: "Dũng Sky", vacsin: 2, age: 14},
-                {name: "Thanh Tùng", vacsin: 0, age: 56},
-                {name: "Giang Năm", vacsin: 1, age: 12},
-                {name: "Sơn Miến", vacsin: 0, age: 30},
-                {name: "Mạp Sơn", vacsin: 2, age: 4},
-                {name: "MTP", vacsin: 1, age: 18},
-                {name: "Trấn Thành", vacsin: 1, age: 42},
-                {name: "Ngọc Bích", vacsin: 0, age: 1},
-                {name: "Zang-Nan", vacsin: 2, age: 5}
+                {name: "Nguyễn Hải Dũng", gender: "Male", age: 21},
+                {name: "Dũng Sky", gender: "Female", age: 14},
+                {name: "Thanh Tùng", gender: "Female", age: 56},
+                {name: "Giang Năm", gender: "Male", age: 12},
+                {name: "Sơn Miến", gender: "Male", age: 30},
+                {name: "Mạp Sơn", gender: "Female", age: 4},
+                {name: "MTP", gender: "Male", age: 18},
+                {name: "Trấn Thành", gender: "Female", age: 42},
+                {name: "Ngọc Bích", gender: "Female", age: 1},
+                {name: "Zang-Nan", gender: "Male", age: 5}
             ]
         }
     }
@@ -33,10 +33,10 @@ export default class Person extends Base{
             $age.innerHTML = `Tuổi: ${link.age}`;
             $container.append($age);
 
-            let $vacsin = document.createElement('div');
-            $vacsin.classList.add('vacsin');
-            $vacsin.innerHTML = `Số mũi vacsin: ${link.vacsin}`;
-            $container.append($vacsin);
+            let $gender = document.createElement('div');
+            $gender.classList.add('vacsin');
+            $gender.innerHTML = `Giới Tính: ${link.gender}`;
+            $container.append($gender);
 
             let $br = document.createElement('br');
             $container.append($br);
